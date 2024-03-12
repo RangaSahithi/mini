@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 80px; /* Increase height */
+    background-color: wheat;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjusted spacing */
+    padding: 0 20px; /* Increased padding */
+}
+
+.nav-logo {
+    height: 60px; /* Adjusted height */
+    width: 100px;
+}
+
+.logo {
+    background-image: url("sharehavenlogo.png");
+    background-size: contain;
+    height: 70px;
+    width: 120%;
+}
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 2px solid rgb(251, 249, 249);
+}
+
+.add-first {
+    color: rgb(57, 39, 39);
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+
+.add-sec {
+    font-size: 1rem;
+}
+
+.add-icon {
+    display: flex;
+}
+
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: pink;
+    height: 40px;
+    width: 1000px;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: rgb(122, 122, 96);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.container .search
+{
+display: flex;
+padding: 30px 0px;
+justify-content: space-between;
+width: 1000px;
+}
+
+.nav-second {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.nav-cart i {
+    font-size: 30px;
+}
+
+.nav-cart {
+    font-size: 0.85rem;
+    font-weight: 800;
+}
+
+.panel {
+    height: 40px;
+    background-color: rgb(191, 158, 102);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-ops p {
+    display: inline;
+    margin-left: 20px;
+}
+
+.panel-ops {
+    width: 80%;
+    font-size: 0.9rem;
+}
+
+.hero-section {
+    background-image: url("heross.jpg");
+    display: flex;
+    height: 400px;
+    background-size: cover;
+    align-items: flex-end;
+}
+
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(229, 229, 213);
+}
+
+.box {
+    height: auto;
+    width: 45%;
+    background-color: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 20px;
+}
+
+.box-image {
+    height: 200px;
+    background-size: cover;
+    margin: 1rem 0;
+}
+
+.box-content {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.box-content p {
+    color: #007185;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+.foot-panel1 {
+    background-color: rgb(133, 93, 19);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.foot-panel2 {
+    background-color: wheat;
+    padding: 20px;
+   
+    justify-content: space-evenly;
+}
+.foot-panel3 {
+    background-color: wheat;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+ul {
+    flex: 1;
+    list-style-type: none;
+    padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-logo {
+        width: 80px;
+    }
+
+    .logo {
+        height: 50px;
+        width: 100%;
+    }
+
+    .nav-cart i {
+        font-size: 24px;
+    }
+
+    .nav-cart {
+        font-size: 0.75rem;
+    }
+
+    .panel {
+        font-size: 0.8rem;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .box-image {
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 100px) {
+    .nav-search {
+        flex-direction: column;
+        height: auto;
+        
+    }
+
+    .search-select {
+        width: 100%;
+        border-radius: 20px;
+        margin-bottom: 10px;
+       
+    }
+
+    .search-input {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .search-icon {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .hero-section {
+        height: 300px;
+    }
+}
